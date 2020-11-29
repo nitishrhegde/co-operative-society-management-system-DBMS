@@ -1,0 +1,131 @@
+*{
+    margin:0px;
+    padding: 0px;
+    
+}
+
+
+
+
+
+
+h2{
+    text-align: center;
+    color:gray;
+    font-family:  "Trebuchet MS",Arial,Helvetica, sans-serif;
+
+    font-size:40px;
+}
+
+.logo{
+    width: 60px;
+    height: 50px;
+    
+    
+}
+span{
+    color: black;
+}
+body{
+    background-image: url("index.jpg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:100%;
+    font-family:  "Trebuchet MS",Arial,Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  .topbar >  nav > ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    background-color:#333;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    
+    
+}
+
+
+.topbar nav > ul > li{
+    float:left;
+    border-right: 1px solid #bbb;
+}
+
+
+.topbar>nav > ul > li:last-child {
+    border-right: none;
+}
+
+.topbar > nav > ul > li > a{
+    display: block;
+    
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+   
+}
+.topbar >nav > ul > li > a:hover{
+    background-color:gray;
+    color: black;
+}
+.head{
+    color: blue;
+    
+} 
+
+/*VERTICAL MENU*/
+.vertical{
+    position:relative;
+    width:200px;
+    
+}
+  
+  /* ALL UL */
+  .vertical ul{
+    list-style: none;
+    height: 100%;
+    background-color:#333;
+   
+  }
+  /* ALL LI */
+  .vertical li{
+    position:relative;
+    
+  }
+  /* ALL A */
+  .vertical a{
+    display:block;
+    color:#eee;
+    text-decoration:none;
+    padding:10px 15px;
+    background:#333;
+    transition:0.2s;
+  }
+  /* ALL A HOVER */
+  .vertical li:hover > a{
+    background:gray;
+  }
+  
+  /* INNER UL HIDE */
+  .vertical ul ul{
+    position:absolute;
+    left:0%;
+    top:0;
+    width:100%;
+    visibility:hidden;
+    opacity:0;
+    transition: transform 0.2s;
+    transform: translateX(50px);
+  }
+  /* INNER UL SHOW */
+  .vertical li:hover > ul{
+    left:100%;
+    visibility:visible;
+    opacity:1;
+    transform: translateX(0px);
+  }
+      
